@@ -30,7 +30,7 @@ We bring together:
 ## 📂 Repository Structure
 
 ```
-├── Dissertation Code Final.ipynb   # 📓 Report
+├── Dissertation Code Final.ipynb   # 📓 Report and proposal
 ├── data/                           # 📁 Raw data (excluded for confidentiality)
 ├── README.md                       # 📜 You are here!
 ```
