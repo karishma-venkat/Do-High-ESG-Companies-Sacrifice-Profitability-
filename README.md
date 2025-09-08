@@ -31,7 +31,7 @@ We bring together:
 
 ```
 ├── Dissertation Code Final.ipynb   # 📓 Report
-├── data/                           # 🗁 Raw data (excluded for confidentiality)
+├── data/                           # 📁 Raw data (excluded for confidentiality)
 ├── README.md                       # 📜 You are here!
 ```
 
@@ -39,28 +39,33 @@ We bring together:
 
 ## 🔍 Methodology
 
-### 📌 Econometrics
+### 📌 Panel Econometrics
 
-* Target: **Profit Margin**
-* Predictors: ESG Score, log revenue, lagged profit margin
-* Models: Fixed & Random Effects
+* **Objective:** Estimate the impact of ESG on profitability.
+* **Dependent Variable:** Profit Margin.
+* **Key Predictor:** ESG Score (1–7 scale, also High/Low binary).
+* **Controls:** Log revenue, lagged profit margin.
+* **Approach:** Both **Fixed Effects** and **Random Effects** models are estimated. The **Hausman test** is used to guide model selection and robustness.
 
 ### 🤖 Machine Learning
 
-Classification of **High-ESG vs. Low-ESG** firms using:
+* **Objective:** Predict whether a firm is High-ESG or Low-ESG based on financial and industry features.
+* **Models Used:**
 
-* Logistic Regression
-* Random Forest 🌲
-* Gradient Boosting ⚡
-* SVM 🔺
-* KNN 👥
+  * Logistic Regression
+  * Random Forest 🌲
+  * Gradient Boosting ⚡
+  * Support Vector Machine (SVM) 🔺
+  * K-Nearest Neighbors (KNN) 👥
+* **Features:** Market cap, industry dummies, lagged profitability, financial indicators.
 
-### 📊 Evaluation Metrics
+### 📊 Model Evaluation
 
 * Accuracy
 * Precision / Recall
 * F1-Score
-* Cross-Validation
+* Cross-Validation (to ensure generalizability)
+* Feature importance analysis (for ML models)
 
 ---
 
@@ -95,8 +100,3 @@ jupyter notebook "Dissertation Code Final.ipynb"
 Contributions, issues, and feature requests are welcome!
 Fork the repo, open a PR, or drop an issue 🚀.
 
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** – see [LICENSE](LICENSE).
